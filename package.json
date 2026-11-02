@@ -3,7 +3,8 @@
   "displayName": "Group Split",
   "description": "Vim-style Ctrl+h/j/k/l: focus the editor group in that direction, or split if there is none.",
   "version": "0.1.1",
-  "publisher": "local",
+  "publisher": "giftorm",
+  "repository": "https://github.com/giftorm/vim-split",
   "license": "MIT",
   "engines": {
     "vscode": "^1.80.0"
