@@ -1,4 +1,4 @@
-# Group Split
+# Vim Split
 
 Vim-style window movement for VS Code editor groups.
 
@@ -15,7 +15,7 @@ the same as `:vsplit` / `:split`.
 ## Install
 
     npx @vscode/vsce package
-    code --install-extension group-split-0.1.0.vsix
+    code --install-extension vim-split-0.1.0.vsix
 
 ## With VSCodeVim
 
