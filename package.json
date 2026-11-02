@@ -1,0 +1,34 @@
+{
+  "name": "group-split",
+  "displayName": "Group Split",
+  "description": "Vim-style Ctrl+h/j/k/l: focus the editor group in that direction, or split if there is none.",
+  "version": "0.1.1",
+  "publisher": "local",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Keymaps"
+  ],
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
+  "main": "./extension.js",
+  "activationEvents": [],
+  "contributes": {
+    "commands": [
+      { "command": "groupSplit.left", "title": "Group Split: Focus or Split Left" },
+      { "command": "groupSplit.down", "title": "Group Split: Focus or Split Down" },
+      { "command": "groupSplit.up", "title": "Group Split: Focus or Split Up" },
+      { "command": "groupSplit.right", "title": "Group Split: Focus or Split Right" }
+    ],
+    "keybindings": [
+      { "key": "ctrl+h", "command": "groupSplit.left", "when": "(editorFocus || activeEditorGroupEmpty && !sideBarFocus && !panelFocus && !auxiliaryBarFocus) && vim.mode != 'Insert'" },
+      { "key": "ctrl+j", "command": "groupSplit.down", "when": "(editorFocus || activeEditorGroupEmpty && !sideBarFocus && !panelFocus && !auxiliaryBarFocus) && vim.mode != 'Insert'" },
+      { "key": "ctrl+k", "command": "groupSplit.up", "when": "(editorFocus || activeEditorGroupEmpty && !sideBarFocus && !panelFocus && !auxiliaryBarFocus) && vim.mode != 'Insert'" },
+      { "key": "ctrl+l", "command": "groupSplit.right", "when": "(editorFocus || activeEditorGroupEmpty && !sideBarFocus && !panelFocus && !auxiliaryBarFocus) && vim.mode != 'Insert'" }
+    ]
+  }
+}
