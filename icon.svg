@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b3138"/>
+      <stop offset="1" stop-color="#1b1f24"/>
+    </linearGradient>
+    <linearGradient id="v" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4cd964"/>
+      <stop offset="1" stop-color="#1f9e3a"/>
+    </linearGradient>
+    <!-- the slice runs from (0,84) to (128,44) -->
+    <clipPath id="above"><polygon points="0,0 128,0 128,44 0,84"/></clipPath>
+    <clipPath id="below"><polygon points="0,84 128,44 128,128 0,128"/></clipPath>
+    <polygon id="vee" points="22,26 50,26 64,74 78,26 106,26 76,106 52,106"/>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="url(#bg)"/>
+  <g clip-path="url(#above)">
+    <use href="#vee" fill="url(#v)" transform="translate(-4 -4)"/>
+  </g>
+  <g clip-path="url(#below)">
+    <use href="#vee" fill="url(#v)" transform="translate(4 4)"/>
+  </g>
+</svg>

@@ -1,11 +1,12 @@
 {
-  "name": "group-split",
-  "displayName": "Group Split",
+  "name": "vim-split",
+  "displayName": "Vim Split",
   "description": "Vim-style Ctrl+h/j/k/l: focus the editor group in that direction, or split if there is none.",
   "version": "0.1.2",
   "publisher": "giftorm",
   "repository": "https://github.com/giftorm/vim-split",
   "license": "MIT",
+  "icon": "icon.png",
   "engines": {
     "vscode": "^1.80.0"
   },
@@ -21,41 +22,41 @@
   "contributes": {
     "commands": [
       {
-        "command": "groupSplit.left",
-        "title": "Group Split: Focus or Split Left"
+        "command": "vimSplit.left",
+        "title": "Vim Split: Focus or Split Left"
       },
       {
-        "command": "groupSplit.down",
-        "title": "Group Split: Focus or Split Down"
+        "command": "vimSplit.down",
+        "title": "Vim Split: Focus or Split Down"
       },
       {
-        "command": "groupSplit.up",
-        "title": "Group Split: Focus or Split Up"
+        "command": "vimSplit.up",
+        "title": "Vim Split: Focus or Split Up"
       },
       {
-        "command": "groupSplit.right",
-        "title": "Group Split: Focus or Split Right"
+        "command": "vimSplit.right",
+        "title": "Vim Split: Focus or Split Right"
       }
     ],
     "keybindings": [
       {
         "key": "ctrl+h",
-        "command": "groupSplit.left",
+        "command": "vimSplit.left",
         "when": "(editorFocus || activeEditorGroupEmpty && !sideBarFocus && !panelFocus && !auxiliaryBarFocus) && vim.mode != 'Insert'"
       },
       {
         "key": "ctrl+j",
-        "command": "groupSplit.down",
+        "command": "vimSplit.down",
         "when": "(editorFocus || activeEditorGroupEmpty && !sideBarFocus && !panelFocus && !auxiliaryBarFocus) && vim.mode != 'Insert'"
       },
       {
         "key": "ctrl+k",
-        "command": "groupSplit.up",
+        "command": "vimSplit.up",
         "when": "(editorFocus || activeEditorGroupEmpty && !sideBarFocus && !panelFocus && !auxiliaryBarFocus) && vim.mode != 'Insert'"
       },
       {
         "key": "ctrl+l",
-        "command": "groupSplit.right",
+        "command": "vimSplit.right",
         "when": "(editorFocus || activeEditorGroupEmpty && !sideBarFocus && !panelFocus && !auxiliaryBarFocus) && vim.mode != 'Insert'"
       }
     ]

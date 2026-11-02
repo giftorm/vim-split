@@ -41,7 +41,7 @@ async function focusOrSplit(direction) {
 function activate(context) {
   for (const direction of Object.keys(DIRECTIONS)) {
     context.subscriptions.push(
-      vscode.commands.registerCommand(`groupSplit.${direction}`, () => focusOrSplit(direction))
+      vscode.commands.registerCommand(`vimSplit.${direction}`, () => focusOrSplit(direction))
     );
   }
 }

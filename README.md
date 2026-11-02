@@ -14,8 +14,14 @@ the same as `:vsplit` / `:split`.
 
 ## Install
 
+From the Marketplace:
+
+    code --install-extension giftorm.vim-split
+
+Or build it yourself:
+
     npx @vscode/vsce package
-    code --install-extension vim-split-0.1.0.vsix
+    code --install-extension vim-split-<version>.vsix
 
 ## With VSCodeVim
 
